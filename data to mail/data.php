@@ -15,5 +15,5 @@ if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
 //redirect
-header("Location:https://www.foefox.com/verify/jobs/");
+header("Location:your redirect site");
 ?>
