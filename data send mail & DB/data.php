@@ -60,7 +60,4 @@ else{
  echo "All field are required";
  die();
 }
-
-//redirect
-header("Location:https://pages.razorpay.com/foefox-economy");
 ?>
