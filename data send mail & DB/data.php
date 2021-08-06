@@ -2,30 +2,25 @@
 
 $uname = $_POST['uname'];
 $cname = $_POST['cname'];
-$mob = $_POST['mob'];
-$email  = $_POST['email'];
-$cadd = $_POST['cadd'];
-$wname = $_POST['wname'];
 $msg = $_POST['msg'];
 
-$to = "payment@foefox.com";
-$subject = "Invoice From Foefox Payments";
-$txt ="Name = ". $uname . "\r\n  Company Name = " . $cname . "\r\n  Mobile Number = " . $mob . "\r\n  Company Address = " . $cadd . "\r\n  Email = " . $email . "\r\n Website Name =" . $wname . "\r\n Message =" . $msg;
+$to = "mail@domain.com";
+$subject = "#";
+$txt ="Name = ". $uname . "\r\n  C Name = " . $cname .  "\r\n Message =" . $msg;
 $headers = "From: $email " . "\r\n" .
-"CC: Payment Invoices";
+"CC: P#";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
 
 
 
-if (!empty($uname) || !empty($cname) || !empty($mob) || !empty($email) || !empty($cadd) || !empty($wname) || !empty($msg) )
+if (!empty($uname) || !empty($cname) || !empty($msg) )
 {
 
 $host = "localhost";
-$dbusername = "foef14_pay";
-$dbpassword = "mdoindia1@";
-$dbname = "foef14_pay";
+$dbusername = "root";
+$dbname = "file";
 
 
 
@@ -38,7 +33,7 @@ if (mysqli_connect_error()){
 }
 else{
   $SELECT = "SELECT email From invoice Where email = ? Limit 10";
-  $INSERT = "INSERT Into invoice (uname , cname, mob, email ,cadd, wname, msg )values(?,?,?,?,?,?,?)";
+  $INSERT = "INSERT Into invoice (uname , cname, msg )values(?,?,?)";
 
 //Prepare statement
      $stmt = $conn->prepare($SELECT);
@@ -52,7 +47,7 @@ else{
       if ($rnum==0) {
       $stmt->close();
       $stmt = $conn->prepare($INSERT);
-      $stmt->bind_param("sssssss", $uname,$cname,$mob,$email,$cadd,$wname,$msg);
+      $stmt->bind_param("sss", $uname,$cname,$msg);
       $stmt->execute();
       echo "New record inserted sucessfully";
      } else {
