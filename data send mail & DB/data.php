@@ -20,8 +20,6 @@ $host = "localhost";
 $dbusername = "root";
 $dbname = "file";
 
-
-
 // Create connection
 $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 
