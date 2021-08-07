@@ -8,7 +8,7 @@ $to = "mail@domain.com";
 $subject = "#";
 $txt ="Name = ". $uname . "\r\n  C Name = " . $cname .  "\r\n Message =" . $msg;
 $headers = "From: $email " . "\r\n" .
-"CC: P#";
+"CC: "#";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
