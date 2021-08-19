@@ -58,5 +58,3 @@ else{
  die();
 }
 ?>
-
-data
