@@ -57,4 +57,7 @@ else{
  echo "All field are required";
  die();
 }
+
+//redirect
+{location:
 ?>
