@@ -31,7 +31,7 @@ if (mysqli_connect_error()){
 else{
   $SELECT = "SELECT email From invoice Where email = ? Limit 10";
   $INSERT = "INSERT Into invoice (uname , cname, msg )values(?,?,?)";
-
+ 
 //Prepare statement  
      $stmt = $conn->prepare($SELECT);
      $stmt->bind_param("s", $email);
