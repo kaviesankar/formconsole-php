@@ -4,7 +4,7 @@
 $uname = $_POST['uname'];
 $cname = $_POST['cname'];
 $msg = $_POST['msg'];
-
+ 
 $to = "mail@domain.com";
 $subject = "#";
 $txt ="Name = ". $uname . "\r\n  C Name = " . $cname .  "\r\n Message =" . $msg;
