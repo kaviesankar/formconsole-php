@@ -32,7 +32,7 @@ else{
   $SELECT = "SELECT email From invoice Where email = ? Limit 10";
   $INSERT = "INSERT Into invoice (uname , cname, msg )values(?,?,?)";
 
-//Prepare statement 
+//Prepare statement  
      $stmt = $conn->prepare($SELECT);
      $stmt->bind_param("s", $email);
      $stmt->execute();
