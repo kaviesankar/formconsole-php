@@ -58,6 +58,4 @@ else{
  die();
 }
 
-//redirect
-{location:
 ?>
