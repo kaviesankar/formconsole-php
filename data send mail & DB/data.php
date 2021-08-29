@@ -57,5 +57,4 @@ else{
  echo "All field are required";
  die();
 }
-
 ?>
