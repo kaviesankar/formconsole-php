@@ -17,7 +17,7 @@ if($email!=NULL){
 if (!empty($uname) || !empty($cname) || !empty($msg) )
 {
 
-$host = "localhost";
+$host = "localhost"; 
 $dbusername = "root";
 $dbname = "file";
 
