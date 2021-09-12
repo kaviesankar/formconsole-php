@@ -6,7 +6,7 @@ if (($_FILES['my_file']['name']!="")){
 	$file = $_FILES['my_file']['name'];
 	$path = pathinfo($file);
 	$filename = $path['filename'];
-	$ext = $path['extension'];
+	$ext = $path['extension']; 
 	$temp_name = $_FILES['my_file']['tmp_name'];
 	$path_filename_ext = $target_dir.$filename.".".$ext;
  
