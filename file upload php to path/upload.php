@@ -1,5 +1,5 @@
 <?php
-if (($_FILES['my_file']['name']!="")){
+if (($_FILES['my_file']['name']!="")){ 
 // Where the file is going to be stored
 // my_file is the name 
 	$target_dir = "upload/";  
