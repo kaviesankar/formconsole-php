@@ -11,7 +11,7 @@ if (($_FILES['my_file']['name']!="")){
 	$path_filename_ext = $target_dir.$filename.".".$ext;
  
 // Check if file already exists
-if (file_exists($path_filename_ext)) {
+if (file_exists($path_filename_ext)) { 
  echo "Sorry, file already exists.";
  }else{
  move_uploaded_file($temp_name,$path_filename_ext);
