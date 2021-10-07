@@ -8,7 +8,7 @@ if (($_FILES['my_file']['name']!="")){
 	$filename = $path['filename'];
 	$ext = $path['extension']; 
 	$temp_name = $_FILES['my_file']['tmp_name'];
-	$path_filename_ext = $target_dir.$filename.".".$ext;
+	$path_filename_ext = $target_dir.$filename.".".$ext; 
  
 // Check if file already exists
 if (file_exists($path_filename_ext)) { 
