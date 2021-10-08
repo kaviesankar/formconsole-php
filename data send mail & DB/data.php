@@ -12,7 +12,7 @@ $headers = "From: $email " . "\r\n" .
 "CC: "#";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
-}
+} 
  
 if (!empty($uname) || !empty($cname) || !empty($msg) )
 {
