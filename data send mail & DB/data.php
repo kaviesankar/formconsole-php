@@ -19,7 +19,7 @@ if (!empty($uname) || !empty($cname) || !empty($msg) )
 
 $host = "localhost"; 
 $dbusername = "root";
-$dbname = "file";
+$dbname = "file"; 
 
 // Create connection
 $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
