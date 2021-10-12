@@ -1,6 +1,6 @@
 <?php
 //get data from form  
-$name = $_POST['name']; 
+$name = $_POST['name'];  
 $email= $_POST['email']; 
 $qualification= $_POST['qualification'];
 $role= $_POST['role'];
