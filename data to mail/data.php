@@ -13,7 +13,7 @@ $headers = "From: $email " . "\r\n" .
 "CC: xxx@yyy.com";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
-}
+} 
 //redirect 
 header("Location:your redirect site");
 ?> 
