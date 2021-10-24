@@ -17,4 +17,3 @@ if($email!=NULL){
 //redirect 
 header("Location:your redirect site");
 ?> 
- 
