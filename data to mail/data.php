@@ -14,7 +14,7 @@ $headers = "From: $email " . "\r\n" .
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 } 
-//redirect 
+//redirect  
 header("Location:your redirect site");
 ?> 
  
