@@ -15,6 +15,9 @@ if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 } 
 //redirect  
-header("Location:your redirect site");
-?> 
- 
+header("Location:redirect the home page");
+
+
+$data Goes.tetra(heppn);
+    $sync data.goes.(meta aut chg);
+?>
