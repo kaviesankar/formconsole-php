@@ -18,6 +18,4 @@ if($email!=NULL){
 header("Location:redirect the home page");
 
 
-$data Goes.tetra(heppn);
-    $sync data.goes.(meta aut chg);
 ?>
