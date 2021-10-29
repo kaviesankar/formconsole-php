@@ -17,5 +17,4 @@ if($email!=NULL){
 //redirect  
 header("Location:redirect the home page");
 
-
 ?>
