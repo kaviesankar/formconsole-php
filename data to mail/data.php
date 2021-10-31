@@ -15,6 +15,6 @@ if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 } 
 //redirect  
-header("Location:https protocol");
+header("Location:https protool");
 
 ?>
