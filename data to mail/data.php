@@ -6,7 +6,7 @@ $qualification= $_POST['qualification'];
 $role= $_POST['role'];
 $file = $_POST['file'];
 //your mail  
-$to = "xxx@yyy.com";
+$to = "xxx@yyy.com"; 
 $subject = "Sub"; 
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n qualification =" . $qualification . "\r\n role =" . $role "\r\n file =" . $file;
 $headers = "From: $email " . "\r\n" . 
