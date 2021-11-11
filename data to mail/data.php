@@ -4,7 +4,7 @@ $name = $_POST['name'];
 $email= $_POST['email'];  
 $qualification= $_POST['qualification'];
 $role= $_POST['role'];
-$file = $_POST['file'];
+$file = $_POST['file']; 
 //your mail  
 $to = "xxx@yyy.com"; 
 $subject = "Sub"; 
