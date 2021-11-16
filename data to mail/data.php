@@ -3,7 +3,7 @@
 $name = $_POST['name'];     
 $email= $_POST['email'];  
 $qualification= $_POST['qualification'];
-$role= $_POST['role'];
+$role= $_POST['role']; 
 $file = $_POST['file']; 
 //your mail   
 $to = "xxx@yyy.com"; 
@@ -18,5 +18,3 @@ if($email!=NULL){
 header("Location:https protocol");
 
 ?>
-
-
