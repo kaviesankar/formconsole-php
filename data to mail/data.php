@@ -19,5 +19,3 @@ header("Location:https protocol");
 
 ?> 
    
- 
- 
