@@ -17,7 +17,7 @@ if($email!=NULL){
 //redirect  
 header("Location:https protocol");
 
-?> 
+?>  
    
  
- 
+  
