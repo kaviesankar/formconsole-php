@@ -1,6 +1,5 @@
 <?php
   
-
 $uname = $_POST['uname'];
 $cname = $_POST['cname'];
 $msg = $_POST['msg'];
